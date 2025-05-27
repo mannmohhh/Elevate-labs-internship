@@ -1,8 +1,0 @@
-From: support@amaz0n-security.com
-Subject: Urgent: Your Account Will Be Suspended!
-Dear Customer,
-We have detected suspicious activity in your account. Please click the link below to verify your account:
-http://malicious-site.ru
-Failure to do so will result in account suspension.
-Sincerely,
-Amazon Security Team
