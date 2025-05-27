@@ -1,0 +1,35 @@
+Return-Path: <no-reply@secure-paypal.com>
+Received: from mail.secure-paypal.com (mail.secure-paypal.com. [203.0.113.45])
+        by mx.google.com with ESMTPS id x7si1234567qka.123.2025.05.27.15.20.30
+        for <youraddress@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 27 May 2025 15:20:30 +0530 (IST)
+Received-SPF: fail (google.com: domain of no-reply@secure-paypal.com does not designate 203.0.113.45 as permitted sender) client-ip=203.0.113.45;
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of no-reply@secure-paypal.com does not designate 203.0.113.45 as permitted sender) smtp.mailfrom=no-reply@secure-paypal.com;
+       dkim=fail header.i=@secure-paypal.com
+Message-ID: <20250527152030.123456@mail.secure-paypal.com>
+Date: Tue, 27 May 2025 15:20:30 +0530
+From: PayPal Security <no-reply@secure-paypal.com>
+Reply-To: noreply-paypal@consultant.com
+To: youraddress@gmail.com
+Subject: [Action Required] Unusual Activity Detected on Your PayPal Account
+
+Dear Customer,
+
+We detected unusual activity in your PayPal account. For your protection, your account has been temporarily limited.
+
+**What you need to do:**
+Please verify your account information by clicking the secure link below:
+https://paypal-security-check.com/verify
+
+If you do not verify within 24 hours, your account may be permanently suspended.
+
+Thank you for using PayPal.
+
+Sincerely,  
+PayPal Security Team
+
+---
+
+This email was sent from an unmonitored address. Please do not reply to this message.
