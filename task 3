@@ -1,1 +1,55 @@
+# Basic Vulnerability Scan Report
+
+## Overview
+
+This README documents the results of a vulnerability assessment conducted on host `192.168.1.10` using Tenable Nessus Essentials on May 29, 2025. The scan identified security weaknesses, assessed their severity, and recommends practical fixes.
+
+---
+
+## 1. Vulnerability Review and Severity Assessment
+
+The scan found a total of **71 vulnerabilities** on the system:
+
+| Severity   | Count |
+|------------|-------|
+| Critical   | 1     |
+| High       | 4     |
+| Medium     | 2     |
+| Low        | 0     |
+| Info       | 64    |
+
+### Most Critical and High-Severity Vulnerabilities
+
+| Severity   | CVSS v3.0 | Plugin Name & Description                                                                                                   |
+|------------|-----------|----------------------------------------------------------------------------------------------------------------------------|
+| Critical   | 9.8       | Node.js 18.x < 18.19.1 / 20.x < 20.11.1 / 21.x < 21.6.2 Multiple Vulnerabilities (Feb 2024 Security Release)                |
+| High       | 8.2       | Node.js 18.x < 18.20.1 / 20.x < 20.12.1 / 21.x < 21.7.2 Multiple Vulnerabilities (Apr 2024 Security Releases)               |
+| High       | 8.1       | Node.js 18.x < 18.20.4 / 20.x < 20.15.1 / 22.x < 22.4.1 Multiple Vulnerabilities (July 2024 Security Releases)              |
+| High       | 7.7       | Node.js 18.x < 18.20.6 / 20.x < 20.18.2 / 22.x < 22.13.1 / 23.x < 23.6.1 Multiple Vulnerabilities (Jan 2025 Security Release)|
+| High       | 7.5       | Python Library Tornado 6.5.0 DoS                                                                                           |
+| Medium     | 6.5       | SSL Certificate Cannot Be Trusted                                                                                           |
+| Medium     | 6.2       | Node.js 20.x < 20.19.2 / 22.x < 22.15.1 / 23.x < 23.11.1 / 24.x < 24.0.2 Multiple Vulnerabilities (Mar 2025 Security Release)|
+
+---
+
+## 2. Simple Fixes and Mitigations
+
+Below are researched, practical steps to address the most critical and high-severity vulnerabilities:
+
+### Node.js Multiple Vulnerabilities (Critical & High)
+- **Mitigation:**  
+  Upgrade Node.js to the latest stable version available for your OS distribution. This will address multiple known security issues, including remote code execution and denial of service vulnerabilities.
+- **How to Fix:**  
+  - On Linux, use your package manager or download the latest binaries from the [official Node.js website](https://nodejs.org/).
+  - Example commands:
+    ```
+    sudo apt-get update
+    sudo apt-get install -y nodejs
+    ```
+  - Or use Node Version Manager (nvm) for user-level installs.
+
+### Python Tornado 6.5.0 DoS (High)
+- **Mitigation:**  
+  Update the Tornado library to the latest version to patch the Denial of Service vulnerability.
+- **How to Fix:**  
 
