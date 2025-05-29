@@ -1,0 +1,99 @@
+## Network Vulnerability Assessment Report
+
+This README provides a detailed review of the vulnerabilities identified in the Nessus scan report, their severity, recommended fixes or mitigations, and documentation of the most critical issues.
+
+---
+
+### **Summary of Findings**
+
+- **Total vulnerabilities detected:** 71
+- **Severity breakdown:**
+  - Critical: 1
+  - High: 4
+  - Medium: 2
+  - Low: 0
+  - Info: 64
+
+---
+
+## **1. Review of Vulnerabilities and Severity**
+
+| Severity   | CVSS Score | Plugin Name / Description                                                                                     | Host         |
+|------------|------------|--------------------------------------------------------------------------------------------------------------|--------------|
+| Critical   | 9.8        | Node.js 18.x < 18.19.1 / 20.x < 20.11.1 / 21.x < 21.6.2 Multiple Vulnerabilities (Feb 14, 2024 Release)      | 192.168.1.10 |
+| High       | 8.2        | Node.js 18.x < 18.20.1 / 20.x < 20.12.1 / 21.x < 21.7.2 Multiple Vulnerabilities (Apr 3, 2024 Release)       | 192.168.1.10 |
+| High       | 8.1        | Node.js 18.x < 18.20.4 / 20.x < 20.15.1 / 22.x < 22.4.1 Multiple Vulnerabilities (Jul 8, 2024 Release)       | 192.168.1.10 |
+| High       | 7.7        | Node.js 18.x < 18.20.6 / 20.x < 20.18.2 / 22.x < 22.13.1 / 23.x < 23.6.1 (Jan 21, 2025 Release)              | 192.168.1.10 |
+| High       | 7.5        | Python Library Tornado 6.5.0 DoS                                                                             | 192.168.1.10 |
+| Medium     | 6.5        | SSL Certificate Cannot Be Trusted                                                                            | 192.168.1.10 |
+| Medium     | 6.2        | Node.js 20.x < 20.19.2 / 22.x < 22.15.1 / 23.x < 23.11.1/24.x < 24.0.2 (May 2025 Release)                    | 192.168.1.10 |
+
+---
+
+## **2. Simple Fixes or Mitigations**
+
+### **Critical Vulnerability**
+
+- **Node.js Multiple Vulnerabilities (CVSS 9.8)**
+  - **Fix:** Upgrade Node.js to at least version 18.19.1, 20.11.1, or 21.6.2, depending on your major version branch.
+  - **Mitigation (if upgrade is not immediately possible):**
+    - Restrict network access to the affected system.
+    - Apply available vendor patches or backports.
+    - Monitor for unusual activity or exploitation attempts.
+
+### **High Vulnerabilities**
+
+- **Node.js Multiple Vulnerabilities (CVSS 8.2, 8.1, 7.7)**
+  - **Fix:** Upgrade Node.js to the latest stable release as per each advisory (see above for minimum versions).
+  - **Mitigation:** Same as above—restrict access, patch, and monitor.
+
+- **Python Tornado 6.5.0 DoS**
+  - **Fix:** Upgrade Tornado to a version above 6.5.0 that addresses the DoS vulnerability.
+  - **Mitigation:** Limit exposure of the affected service, apply input validation, and monitor for abnormal traffic.
+
+### **Medium Vulnerabilities**
+
+- **SSL Certificate Cannot Be Trusted**
+  - **Fix:** Replace the SSL certificate with one signed by a trusted Certificate Authority (CA).
+  - **Mitigation:** Limit access to the service using the untrusted certificate and educate users about the risks of accepting untrusted certificates.
+
+---
+
+## **3. Documentation of Most Critical Vulnerabilities**
+
+### **1. Node.js Multiple Vulnerabilities (Critical, CVSS 9.8)**
+- **Description:** Multiple critical vulnerabilities in Node.js could allow remote code execution, denial of service, or other severe impacts.
+- **Affected Versions:** Node.js 18.x < 18.19.1, 20.x < 20.11.1, 21.x < 21.6.2.
+- **Impact:** Attackers may exploit these flaws to compromise the server, execute arbitrary code, or disrupt services.
+- **Remediation:** Upgrade Node.js to the latest secure version as soon as possible.
+
+### **2. Node.js Multiple Vulnerabilities (High, CVSS 8.2, 8.1, 7.7)**
+- **Description:** Additional vulnerabilities in Node.js, including denial of service and potential privilege escalation.
+- **Remediation:** Upgrade to the latest Node.js version as per each security advisory.
+
+### **3. Python Tornado 6.5.0 DoS (High, CVSS 7.5)**
+- **Description:** A vulnerability in Tornado 6.5.0 could allow attackers to cause a denial of service.
+- **Remediation:** Upgrade Tornado to a patched version.
+
+### **4. SSL Certificate Cannot Be Trusted (Medium, CVSS 6.5)**
+- **Description:** The SSL certificate in use is not trusted, which could allow attackers to perform man-in-the-middle attacks.
+- **Remediation:** Replace with a certificate from a trusted CA.
+
+---
+
+## **4. Recommendations**
+
+- **Prioritize patching and upgrading Node.js and Tornado as outlined above.**
+- **Replace untrusted SSL certificates.**
+- **Regularly review and update all software dependencies.**
+- **Restrict network access to critical services and monitor logs for suspicious activity.**
+
+---
+
+## **5. References**
+
+- This report is based on the Nessus scan findings for host 192.168.1.10 as of May 29, 2025.
+
+---
+
+**End of README**
