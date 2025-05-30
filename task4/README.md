@@ -1,25 +1,25 @@
-# 🔒 Windows Firewall Task – Cybersecurity Lab
+#  Windows Firewall Task 
 
-## 🎯 Objective
+##  Objective
 Configure and test basic firewall rules to allow or block traffic using Windows Defender Firewall.
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 - Windows Defender Firewall with Advanced Security
 - PowerShell (for testing rules)
 - (Optional) Telnet Client
 
 ---
 
-## 📂 Files Included
+##  Files Included
 - `Add_Rule/` – Step-by-step screenshots of the process
 - `Rules_txt/` – Exported lists of firewall rules (before and after changes)
 - `README.md` – This documentation
 
 ---
 
-## 📝 Steps Performed
+##  Steps Performed
 
 ### 1. Export Existing Firewall Rules (Before Changes)
 - Open Windows Defender Firewall with Advanced Security (`wf.msc`).
@@ -53,7 +53,7 @@ Configure and test basic firewall rules to allow or block traffic using Windows 
 
 ---
 
-## 🧠 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 - **Port-based traffic blocking:** Blocked Telnet (port 23) to prevent insecure access.
 - **Inbound vs Outbound rules:** Focused on controlling incoming connections.
 - **Testing firewall rules:** Used PowerShell to verify port status.
@@ -61,7 +61,7 @@ Configure and test basic firewall rules to allow or block traffic using Windows 
 
 ---
 
-## 🔎 How Windows Firewall Filters Traffic (Summary)
+##  How Windows Firewall Filters Traffic (Summary)
 Windows Firewall inspects all network traffic entering or leaving the computer. It compares each packet to its list of rules:
 - **Allow rules** let traffic through.
 - **Block rules** deny traffic.
@@ -72,14 +72,14 @@ This process protects your system by only permitting trusted traffic and blockin
 
 ---
 
-## 📌 Outcome
+##  Outcome
 - Gained hands-on experience configuring Windows Firewall.
 - Understood how to apply, test, and remove firewall rules.
 - Learned how port-based filtering can control network access.
 
 ---
 
-## 📷 Screenshots & Exports
+##  Screenshots & Exports
 - See the `Add_Rule/` folder for screenshots of each step.
 - See the `Rules_txt/` folder for exported firewall rule lists before and after changes.
 
