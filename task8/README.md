@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project documents my hands-on experience with ProtonVPN as part of a cybersecurity internship. The goal was to understand VPN setup, privacy features, practical effects on browsing, and to audit browser extensions for security.
+This project documents my hands-on experience with ProtonVPN as part of a cybersecurity internship. The goal was to understand VPN setup, privacy features, practical effects on browsing for security.
 
 ---
 
@@ -42,10 +42,6 @@ This project documents my hands-on experience with ProtonVPN as part of a cybers
 - All traffic is encrypted and tunneled, protecting data from interception.
 - VPN masks the real IP, enhancing privacy, but does not guarantee complete anonymity.
 
-### 8. Browser Extension Audit
-- Reviewed installed browser extensions.
-- Removed any suspicious or unused extensions to reduce privacy risks.
-
 ---
 
 ## VPN Benefits and Limitations
@@ -70,14 +66,14 @@ This project documents my hands-on experience with ProtonVPN as part of a cybers
 - **Screenshot 2:** whatismyipaddress.com with Japanese IP.
 - **Screenshot 3:** ProtonVPN Downloads Page.
 - **Screenshot 4:** ProtonVPN client showing “Connected” to the Japan server.
-- **Screenshot 5:** Browser extension page.
+
 
 
 ---
 
 ## Summary
 
-This exercise provided practical experience with VPN setup, privacy verification, and understanding real-world limitations such as speed reduction. I also learned the importance of auditing browser extensions as part of personal cybersecurity hygiene.
+This exercise provided practical experience with VPN setup, privacy verification, and understanding real-world limitations such as speed reduction. 
 
 ---
 
