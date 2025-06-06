@@ -1,0 +1,31 @@
+Cyber Security Internship: VPN Hands-On Experience
+
+Overview:
+This document summarizes the hands-on experience with ProtonVPN, highlighting the setup process, privacy features, and practical insights gained.
+
+Key Highlights:
+- Successfully signed up and installed ProtonVPN client.
+- Connected to a VPN server in Japan, verified IP address change from India to Japan.
+- Experienced real-world impact on browsing speed and streaming quality.
+- Conducted a thorough audit of browser extensions to enhance security.
+
+Benefits of VPN:
+- Encrypts internet traffic, protecting data from interception.
+- Masks real IP address, enhancing online privacy.
+- Enables access to geo-restricted content.
+- Secures connections on public Wi-Fi networks.
+
+Limitations:
+- Potential speed reduction due to encryption overhead.
+- VPNs do not guarantee complete anonymity.
+- Some websites may block VPN traffic.
+
+Conclusion:
+This internship task provided valuable practical knowledge about VPN technology, its benefits, and limitations, along with cybersecurity best practices.
+
+Attachments:
+- Screenshots of VPN connection status and IP verification.
+- Browser extension audit.
+
+Prepared by: Mohit Kumar
+Date: June 6, 2025
